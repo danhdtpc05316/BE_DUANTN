@@ -39,9 +39,8 @@ import lombok.AllArgsConstructor;
 @RequestMapping("/api/auth")
 public class Auth {
 
-	    @Autowired
 	    @Lazy
-	    private PasswordEncoder passwordEncoder;
+	    private final PasswordEncoder passwordEncoder;
 
 	    @Autowired
 	    @Lazy
